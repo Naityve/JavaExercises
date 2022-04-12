@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        exampleRandom();
+        exampleIf();
     }
 
     public static void exampleScanner() {
@@ -62,4 +62,19 @@ public class App {
         System.out.println(y);
 
     }
+
+    public static void exampleIf() {
+        
+        int age = 70;
+
+        if(age>=18 && age<=64) {
+            System.out.println("Age Check Passed");
+        } else if(age>=65){
+            System.out.println("Age Check Failed. Too Old");
+        } else {
+            System.out.println("Age Check Failed. Too Young");
+        }
+
+    }
+
 }
