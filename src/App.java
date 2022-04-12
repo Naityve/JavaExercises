@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        exampleSwitch();
+        exampleWhile();
     }
 
     public static void exampleScanner() {
@@ -14,6 +14,7 @@ public class App {
         String name = scanner.nextLine();
 
         System.out.println("your name is " + name);
+        scanner.close();
     }
 
     public static void exampleGUI() {
@@ -98,6 +99,17 @@ public class App {
             break;
             default: System.out.println("Error. Incorrect value for {age}");
             break;
+        }
+
+    }
+
+    public static void exampleWhile() {
+
+        int num = 0;
+
+        while(num != 10) {
+            System.out.println(num + 1);
+            num++;
         }
 
     }
