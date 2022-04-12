@@ -1,11 +1,10 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
-import java.math.*;
-
+import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        exampleMath();
+        exampleRandom();
     }
 
     public static void exampleScanner() {
@@ -50,5 +49,17 @@ public class App {
         double answer = Math.sqrt((num1*num1)+(num2*num2));
 
         System.out.print(answer);
+    }
+
+    public static void exampleRandom() {
+        Random random = new Random();
+
+        int x = random.nextInt(6)+1;
+
+        double y = random.nextDouble();
+
+        System.out.println(x);
+        System.out.println(y);
+
     }
 }
