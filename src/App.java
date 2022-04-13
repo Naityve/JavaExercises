@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        exampleWhile();
+        Display();
     }
 
     public static void exampleScanner() {
@@ -113,4 +113,39 @@ public class App {
         }
 
     }
+
+    public static void exampleNestedLoop() {
+        int rows = 8;
+        int columns = 32;
+        String symbol = "0";
+
+        for(int i = 0; i<=rows; i++) {
+            
+            System.out.println();
+
+            for(int j=1; j<=columns; j++) {
+                System.out.print(symbol);
+            }
+        }
+    }
+
+    public static void Display() {
+
+        int width = 25;
+        int height = 100;
+
+        char symbol = '/';
+
+        for(int i=0; i<width; i++) {
+
+            System.out.println();
+
+            for(int j=1; j<height; j++) {
+
+                System.out.print(symbol);
+
+            }
+        }
+    }
+
 }
