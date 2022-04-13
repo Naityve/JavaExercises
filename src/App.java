@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Display();
+        example2dArrays();
     }
 
     public static void exampleScanner() {
@@ -127,6 +127,37 @@ public class App {
                 System.out.print(symbol);
             }
         }
+    }
+
+    public static void exampleArrays() {
+        String[] names = {"James","Fred","Rebecca"};
+
+        for(int i=0; i< names.length; i++) {
+            System.out.println(names[i]);
+        }
+    }
+
+    public static void example2dArrays() {
+
+        String[][] cars = new String[3][3];
+
+        cars[0][0] = "Camaro";
+        cars[0][1] = "Corvette";
+        cars[0][2] = "Silverado";
+        cars[1][0] = "Mustang";
+        cars[1][1] = "Ranger";
+        cars[1][2] = "F-150";
+        cars[2][0] = "Ferrari";
+        cars[2][1] = "Lambo";
+        cars[2][2] = "Tesla";
+        
+        for(int i=0; i<cars.length; i++) {
+            System.out.println();
+            for(int j=0; j<cars[i].length; j++) {
+                System.out.print(cars[i][j]+" ");
+            }
+        }
+
     }
 
     public static void Display() {
