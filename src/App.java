@@ -5,7 +5,19 @@ import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
-       exampleConstructor();
+       exampleOverloadedConstructors();
+    }
+
+    public static void exampleOverloadedConstructors() {
+        Pizza pizza = new Pizza("thick","bbq", "cheddar","sweetcorn");
+        System.out.println(pizza.bread);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.topping);
+    }
+
+    public static void exampleVariableScope() {
+        DiceRoller diceRoller = new DiceRoller();
     }
 
     public static void exampleConstructor() {

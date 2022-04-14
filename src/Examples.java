@@ -188,7 +188,11 @@ public class Examples {
         Double d = 3.14;
         String e = "Frank";
 
-        System.out.println(a.hashCode());
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
     }
 
     public static void exampleArrayList() {
@@ -244,7 +248,7 @@ public class Examples {
 
     public static void exampleForEach() {
 
-        String[] animals = {"cat", "dog", "bird"};
+        //String[] animals = {"cat", "dog", "bird"};
 
         ArrayList<String> drinks = new ArrayList<String>();
 
