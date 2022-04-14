@@ -5,47 +5,39 @@ import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Display();
+       exampleConstructor();
     }
 
-    public static void Display() {
+    public static void exampleConstructor() {
+        
+        Human human1 = new Human("Bob", 35, 68.2);
+        Human human2 = new Human("Fred", 62, 55);
 
-        String[] height = new String[8];
-        String[] width = new String[32];
+        System.out.println(human1.name);
+        human2.eat();
+        human1.drink();
 
-        String[][] map = new String[8][32];
-
-        map[0][0] = "/";
-
-        String symbol_buffer = "/";
-
-        // Initialise the display with emptySpace symbols : '/'
-
-        for(int i=0; i<height.length; i++) {
-            for(int j=0; j<width.length; j++) {
-
-                width[j] = symbol_buffer;
-
-            }
-
-        }
-
-        // Prints out the display
-
-        for(int i=0; i<height.length; i++) {
-
-            System.out.println();
-
-            for(int j=0; j<width.length; j++) {
-
-                System.out.print(width[j]);
-
-            }
-        }
     }
 
-    public static void clearDisplay() {
-        System.out.println("\033[H\033[2J");
+    public static void exampleOOP() {
+
+        exampleOOP_Car myCar = new exampleOOP_Car();
+
+        System.out.println(myCar.color);
+        System.out.println(myCar.make);
+        System.out.println(myCar.model);
+        System.out.println(myCar.year);
+        myCar.drive();
+        myCar.brakes();
+
+
+        exampleOOP_Car mySecondCar = new exampleOOP_Car();
+
+        System.out.println(mySecondCar.color);
+        System.out.println(mySecondCar.make);
+        System.out.println(mySecondCar.model);
+        System.out.println(mySecondCar.year);
+
     }
 
 }

@@ -242,5 +242,132 @@ public class Examples {
 
     }
 
+    public static void exampleForEach() {
+
+        String[] animals = {"cat", "dog", "bird"};
+
+        ArrayList<String> drinks = new ArrayList<String>();
+
+        drinks.add("coca-cola");
+        drinks.add("water");
+        drinks.add("coffee");
+
+        for(String i : drinks) {
+            System.out.println(i);
+        }
+
+    }
+
+    //////////////////////////////////////////////////////////////////////
+    public static void exampleMethods() {
+
+        int age = 30;
+
+        String name = "Josh";
+
+        exampleMethods_hello(name, age);
+
+        int x = 3;
+        int y = 4;
+        int z;
+
+        z = exampleMethods_sum(x, y);
+        
+        System.out.println(z);
+    }
+
+    static void exampleMethods_hello(String name, int age) {
+        System.out.println("Hello "+name);
+        System.out.println("You are "+age);
+    }
+
+    static int exampleMethods_sum(int x, int y) {
+        int z = x + y;
+        return z;
+    }
+    //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////
+    public static void exampleOverloadedMethods() {
+
+        int a, b, c;
+        a = 5;
+        b = 10;
+        c = 15;
+
+        System.out.println(add(a, b));
+        System.out.println(add(a, b, c));
+
+    }
+
+    static int add(int a, int b) {
+        return a+b;
+    }
+    
+    static int add(int a, int b, int c) {
+        return a+b+c;
+    }
+    //////////////////////////////////////////////////////////////////////
+
+    public static void examplePrintf() {
+
+        System.out.printf("this is a format string %d", 123);
+
+        boolean myBoolean = true;
+        char myChar = '@';
+        String myString = "Hello";
+        int myInt = 50;
+        double myDouble = 1000;
+
+        System.out.printf("%b , %c , %s , %d, %f", myBoolean, myChar, myString, myInt, myDouble);
+
+    }
+
+    public static void exampleFinalKeyword() {
+
+        // final variables cannot be changed once instanciated
+
+        final double PI = 3.14159;
+
+        System.out.println(PI);
+
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
