@@ -1,5 +1,4 @@
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 import javax.swing.JOptionPane;
 
@@ -155,4 +154,93 @@ public class Examples {
         System.out.println(input);
 
     }
+
+    public static void exampleStrings() {
+
+        String name = "Jack";
+
+        boolean result = name.equals("Mary");
+
+        int stringLength = name.length();
+
+        /*
+
+        .charAt()
+        .indexOf()
+        .isEmpty()
+        .toUpperCase()
+        .toLowerCase()
+        .trim() REMOVES EMPTY SPACES IN A STRING
+        .replace(oldChar, newChar)
+
+        */
+
+        System.out.println(result);
+        System.out.println(stringLength);
+
+    }
+
+    public static void exampleWrapper() {
+
+        Boolean a = true;
+        Character b = '@';
+        Integer c = 123;
+        Double d = 3.14;
+        String e = "Frank";
+
+        System.out.println(a.hashCode());
+    }
+
+    public static void exampleArrayList() {
+        // ArrayList = resizeable array
+
+        ArrayList<String> days = new ArrayList<String>();
+
+        days.add("Monday");
+        days.add("Tuesday");
+        days.add("Wednesday");
+        days.add("Thursday");
+        days.add("Friday");
+        days.add("Saturday");
+        days.add("Sunday");
+
+        days.set(0, "Boreday");
+        days.remove("Friday");
+        days.clear();
+
+        for(int i=0; i<days.size(); i++) {
+            System.out.println(days.get(i));
+        }
+
+    }
+
+    public static void example2DArrayList() {
+
+        ArrayList<ArrayList<String>> groceries = new ArrayList();
+
+        ArrayList<String> bakeryList = new ArrayList<String>();
+        bakeryList.add("pasta");
+        bakeryList.add("garlic bread");
+        bakeryList.add("donuts");
+
+        ArrayList<String> produceList = new ArrayList<String>();
+        produceList.add("tomatoes");
+        produceList.add("zuchini");
+        produceList.add("peppers");
+
+        ArrayList<String> drinksList = new ArrayList<String>();
+        drinksList.add("soda");
+        drinksList.add("coffee");
+
+        groceries.add(bakeryList);
+        groceries.add(produceList);
+        groceries.add(drinksList);
+
+        System.out.println(groceries);
+        System.out.println(groceries.get(0));
+        System.out.println(groceries.get(0).get(0));
+
+    }
+
+
 }
